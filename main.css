@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: antiquewhite;
+    background: url(background-alt.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-rows: 500px;
+    grid-template-columns: 300px;
+    justify-content: center;
+    align-content: center;
+}
+
+#container {
+    display: grid;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 30px #a9a9a9;
+}
