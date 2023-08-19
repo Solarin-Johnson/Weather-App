@@ -11,8 +11,7 @@ document.querySelectorAll("#btn")[0].addEventListener('click', () => {
 
             console.log(`Weather: ${description}`);
             console.log(`Temperature: ${temperature}°C`);
-            deg = `&deg`
-            result = `${city} has ${description} currently, with a temperature of about ${Math.round(temperature)} °C equivalent to ${(Math.round(temperature * (9 / 5)) + 32)} F`
+            result = `${city} has ${description} currently, with a temperature of about ${Math.round(temperature / 10)}°C equivalent to ${(Math.round((temperature * (9 / 5)) + 32) / 10)}F`
             console.log(result)
             document.getElementById("results").textContent = result
         })
@@ -20,7 +19,7 @@ document.querySelectorAll("#btn")[0].addEventListener('click', () => {
             console.error('Error fetching data:', error);
         });
 
-    
+
 })
 autoResize = setInterval(() => {
     if (innerHeight < 500) {
